@@ -281,20 +281,11 @@ body{
 		display: block;
 		margin: 4em auto 1em auto;
 		color: #ccc;
+		h3, h4{
+			font-family: $SemiBold;
+		}
 	}
 }
-.social-media{
-	padding-left: 40px;
-}
-#twitter{
-  	margin: 0 60px;
-  	color: #2DAAE2;
- }
- #linkedin{
-  	margin: 0 120px;
-  	color: #0274B3;
- }
-
 .section-project{
 	background: #f7f7f7;
 	padding: 50px 0;
@@ -366,6 +357,12 @@ body{
     &:hover i{
 		color: $Projects;
 	}
+	a{
+		color: grey;
+	}
+	a:hover{
+		text-decoration: none;
+	}
 }
 .content-icon-spotify{
 	display: flex;
@@ -381,6 +378,9 @@ body{
 }
 .section-contact{
 	padding: 50px 0;
+	h3{
+		font-family: $SemiBold;
+	}
 	ul{
 		margin: 20px 0;
 		display: block;
