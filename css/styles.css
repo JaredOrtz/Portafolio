@@ -1,0 +1,326 @@
+@font-face {
+  font-family: Poppins-Regular;
+  font-display: auto;
+  src: url(../fonts/Poppins-Regular.ttf) format("truetype"); }
+@font-face {
+  font-family: Poppins-Medium;
+  font-display: auto;
+  src: url(../fonts/Poppins-Medium.ttf) format("truetype"); }
+@font-face {
+  font-family: Poppins-SemiBold;
+  font-display: auto;
+  src: url(../fonts/Poppins-SemiBold.ttf) format("truetype"); }
+::-webkit-scrollbar-track {
+  background-color: var(--whitePet); }
+
+::-webkit-scrollbar {
+  width: 8px; }
+
+::-webkit-scrollbar-thumb {
+  background: #D9D9D9;
+  border-radius: 10px; }
+
+::-webkit-scrollbar-thumb:hover {
+  background: #C9C9C9; }
+
+body, html {
+  margin: 0;
+  height: 100%; }
+
+body {
+  overflow-x: hidden; }
+
+.background {
+  width: 100%;
+  padding: 120px 0 150px 0;
+  background-position: center;
+  background-size: cover; }
+
+#rightHalf {
+  background-image: url("../img/UIUX.svg");
+  width: 50%;
+  position: absolute;
+  right: 0px;
+  height: 100%;
+  background-size: cover; }
+
+.content-name {
+  position: relative; }
+  .content-name h1 {
+    width: 90%;
+    color: #333;
+    line-height: 78px;
+    font-size: 60px;
+    font-family: "Poppins-SemiBold"; }
+    .content-name h1 span:first-child {
+      font-family: "Poppins-Regular"; }
+  .content-name p:nth-child(2) {
+    color: #96CEB4;
+    font-size: 30px;
+    font-family: "Poppins-SemiBold"; }
+  .content-name p:nth-child(3) {
+    color: grey;
+    font-size: 19px;
+    font-family: "Poppins-Medium"; }
+
+.section-about {
+  padding: 40px 0;
+  background-color: #fff;
+  background-image: url("../img/Background-Uses.svg");
+  background-size: cover; }
+  .section-about h1 {
+    color: #108ee8;
+    font-family: "Poppins-SemiBold"; }
+    .section-about h1 .point-about {
+      position: absolute;
+      width: 10px;
+      height: 10px;
+      background-color: #108ee8;
+      border-radius: 10px; }
+  .section-about p {
+    padding-top: 10px;
+    color: #333;
+    font-family: "Poppins-SemiBold"; }
+  .section-about .languages {
+    z-index: 1; }
+    .section-about .languages h3 {
+      color: #333;
+      font-family: "Poppins-SemiBold"; }
+      .section-about .languages h3 .span-use {
+        color: #108ee8; }
+    .section-about .languages .rectangle-grey-about {
+      position: absolute;
+      right: -200px;
+      top: 60px;
+      float: right;
+      background-color: #e5e5e5;
+      width: 700px;
+      height: 300px;
+      z-index: -1; }
+
+.section-job {
+  padding: 40px 0; }
+  .section-job h1 {
+    color: #BCACD4;
+    font-family: "Poppins-SemiBold";
+    margin-bottom: 1em; }
+    .section-job h1 span {
+      position: absolute;
+      width: 10px;
+      height: 10px;
+      background-color: #BCACD4;
+      border-radius: 10px; }
+
+.card-uses {
+  position: relative;
+  padding: 10px;
+  width: 90%;
+  border-radius: 10px;
+  margin-top: 20px;
+  background-color: #fff;
+  box-shadow: 1px 4px 8px rgba(0, 0, 0, 0.2);
+  color: #ccc;
+  text-align: center; }
+
+@media screen and (max-width: 768px) {
+  .background {
+    padding: 50px 0 145px 0; }
+
+  .content-name h1 {
+    line-height: 55px;
+    font-size: 45px; }
+
+  .content-name p:nth-child(2) {
+    font-size: 25px; }
+
+  .content-name p:nth-child(3) {
+    font-size: 17px; }
+
+  .skills ul {
+    margin-top: 1em;
+    padding: 0; }
+    .skills ul li {
+      margin-bottom: 1em; } }
+.section-job {
+  padding: 40px 0; }
+  .section-job .card-job {
+    position: relative;
+    padding: 10px;
+    width: 90%;
+    border-radius: 10px;
+    margin-top: 20px;
+    background-color: #fff;
+    box-shadow: 1px 4px 8px rgba(0, 0, 0, 0.2);
+    border: 1px solid #e5e5e5;
+    margin-top: 0 !important;
+    padding: 15px !important;
+    margin-bottom: 1em;
+    cursor: pointer; }
+    .section-job .card-job h5 {
+      font-family: "Poppins-SemiBold";
+      color: #333; }
+      .section-job .card-job h5 i {
+        color: #BCACD4;
+        margin-right: 5px; }
+    .section-job .card-job p {
+      font-family: "Poppins-Medium";
+      color: grey; }
+  .section-job .content-ceo {
+    box-shadow: 0 30px 60px -12px rgba(50, 50, 93, 0.25), 0 18px 36px -18px rgba(0, 0, 0, 0.05);
+    margin: 8px 16px 8px 0;
+    background-color: #fff;
+    transition: box-shadow .2s,transform .2s;
+    border-radius: 8px;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    padding: 20px 24px; }
+    .section-job .content-ceo span {
+      position: absolute;
+      background-image: url("../img/cricle-ceo.svg");
+      background-size: cover;
+      width: 500px;
+      height: 500px;
+      top: 10px;
+      z-index: -1;
+      opacity: 0.5; }
+    @media screen and (max-width: 768px) {
+      .section-job .content-ceo span {
+        display: none; } }
+    .section-job .content-ceo h3 {
+      font-family: "Poppins-SemiBold"; }
+    .section-job .content-ceo p:nth-child(2) {
+      font-family: "Poppins-Medium";
+      color: #BCACD4; }
+    .section-job .content-ceo p:nth-child(3) {
+      font-family: "Poppins-Medium";
+      color: #8F8F8F; }
+  .section-job .content-front {
+    box-shadow: 0 30px 60px -12px rgba(50, 50, 93, 0.25), 0 18px 36px -18px rgba(0, 0, 0, 0.05);
+    margin: 8px 16px 8px 0;
+    background-color: #fff;
+    transition: box-shadow .2s,transform .2s;
+    border-radius: 8px;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    padding: 20px 24px; }
+    .section-job .content-front span {
+      position: absolute;
+      background-image: url("../img/cricle-ceo.svg");
+      background-size: cover;
+      width: 300px;
+      height: 300px;
+      top: -55px;
+      right: -80px;
+      z-index: -1;
+      opacity: 0.5; }
+    @media screen and (max-width: 768px) {
+      .section-job .content-front span {
+        display: none; } }
+    .section-job .content-front h3 {
+      font-family: "Poppins-SemiBold"; }
+    .section-job .content-front p:nth-child(2) {
+      font-family: "Poppins-Medium";
+      color: #BCACD4; }
+    .section-job .content-front p:nth-child(3) {
+      font-family: "Poppins-Medium";
+      color: #8F8F8F; }
+  .section-job .content-prox {
+    text-align: center;
+    display: block;
+    margin: 4em auto 1em auto;
+    color: #ccc; }
+
+.social-media {
+  padding-left: 40px; }
+
+#twitter {
+  margin: 0 60px;
+  color: #2DAAE2; }
+
+#linkedin {
+  margin: 0 120px;
+  color: #0274B3; }
+
+.section-project {
+  background: #f7f7f7;
+  padding: 50px 0; }
+  .section-project h1 {
+    color: #EDBDBB;
+    font-family: "Poppins-SemiBold";
+    padding-bottom: 30px; }
+    .section-project h1 span {
+      position: absolute;
+      width: 10px;
+      height: 10px;
+      background-color: #EDBDBB;
+      border-radius: 10px; }
+  @media screen and (max-width: 768px) {
+    .section-project h1 {
+      padding-bottom: 10px; } }
+
+@keyframes fadeIn {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+.fadeIn {
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn; }
+
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both; }
+
+.card {
+  box-shadow: 1px 4px 8px rgba(0, 0, 0, 0.2);
+  margin: 8px 16px 8px 0;
+  background-color: #fff;
+  transition: box-shadow .2s,transform .2s;
+  border-radius: 8px;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  display: flex;
+  padding: 20px 24px;
+  cursor: pointer;
+  transition: all 0.3s ease-out; }
+  .card h3 {
+    font-family: "Poppins-SemiBold";
+    color: #333; }
+    .card h3 small {
+      color: #EDBDBB;
+      font-family: "Poppins-Medium";
+      font-size: 15px; }
+  .card p {
+    font-family: "Poppins-Medium";
+    color: grey; }
+  .card i {
+    transition: all 0.1s ease-out; }
+  .card:hover i {
+    color: #EDBDBB; }
+
+.content-icon-spotify {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 25%; }
+
+@media screen and (max-width: 768px) {
+  .content-icon-spotify {
+    margin-bottom: 40px; } }
+.section-contact {
+  padding: 50px 0; }
+  .section-contact ul {
+    margin: 20px 0;
+    display: block;
+    padding-left: 0; }
+    .section-contact ul li {
+      display: inline-block;
+      list-style: none;
+      margin-right: 10px; }
+      .section-contact ul li a {
+        color: grey; }
+        .section-contact ul li a:hover {
+          text-decoration: none;
+          color: #BDE4E8; }
+
+/*# sourceMappingURL=styles.css.map */
