@@ -289,6 +289,12 @@ body{
 .section-project{
 	background: #f7f7f7;
 	padding: 50px 0;
+	p{
+		font-family: $Regular;
+		color: #C7C7C7;
+		font-size: 20px;
+		margin-bottom: 1px;
+	}
 	h1{
 		color: $Projects;
 		font-family: $SemiBold;
@@ -301,6 +307,65 @@ body{
 		h1{
 			padding-bottom: 10px;
 		}
+	}
+}
+.card-certificate{
+		margin-bottom: 3em;
+	}
+.section-certificates{
+	background-color: #fff;
+	padding: 50px 0;
+	p{
+		font-family: $Regular;
+		color: #C7C7C7;
+		font-size: 20px;
+		margin-bottom: 1px;
+	}
+	h1{
+		color: #333;
+		font-family: $SemiBold;
+		padding-bottom: 30px;
+	}
+}
+.image-company{
+	background-color: #ededed;
+	border-radius: 10px;
+}
+.info-certificate{
+	padding: 15px 5px 0 5px;
+	h4{
+		font: {
+			size: 17px;
+			family: $SemiBold;
+		}
+		small{
+			float: right;
+			font-size: 12px;
+			padding: 5px 10px;
+			background-color: #ededed;
+			border-radius: 10px;
+		}
+	}
+	p{
+		margin-bottom: 2px;
+		font-family: $Medium;
+		color: #ADADAD;
+		font-size: 13px;
+	}
+	a{
+		font-family: $Medium;
+		color: #108ee8;
+		font-size: 14px;
+		i{
+			transition: all 0.3s ease-out;	
+		}
+		&:hover {
+			text-decoration: none;
+			i {
+				transform: translateX(3px);
+			}
+		}
+		
 	}
 }
 @keyframes fadeIn {
@@ -349,7 +414,9 @@ body{
     }
     p{
     	font-family: $Medium;
-    	color: grey;
+    	color: #B2B2B2;
+    	font-size: 16px;
+    	margin-top: 15px;
     }
     i{
     	transition: all 0.1s ease-out;
